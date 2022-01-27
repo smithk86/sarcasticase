@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sarcasticase"
+version = "0.1.0"
+description = "Easily convert text to be like sarcastic Spongebob"
+authors = ["Kyle Smith <smithk86@gmail.com>"]
+license = "MIT"
+packages = [
+    { include = "sarcasticase.py" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+sarcasticase = "sarcasticase:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
